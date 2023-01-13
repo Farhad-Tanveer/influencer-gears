@@ -1,0 +1,168 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.container {
+    padding: 0 25px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* nav bar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    height: 80px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+}
+
+.menu-bar>ul {
+    display: flex;
+    list-style: none;
+    gap: 34px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+}
+
+/* banner styles */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.banner-details {
+    padding-right: 100px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 52px;
+    color: #3A3A3A;
+
+}
+
+.banner-description {
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+    padding: 16px 0;
+    margin-right: 220px;
+}
+
+.btn button {
+    font-weight: 700;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 25px;
+    color: white;
+    background-color: #E02C6D;
+}
+
+.banner-logo {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-logo>img {
+    width: 400px;
+    height: 400px;
+}
+
+/* brand logo */
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 100px;
+    padding: 20px;
+    box-shadow: 0px 4px 23px -19px rgba(0, 0, 0, 0.75);
+}
+
+/* popular collection styles */
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px 10px;
+    margin: 30px 190px;
+    gap: 20px;
+
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    counter-reset: #3a3a3a;
+    margin-top: 100px;
+}
+
+.photo {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 20px 20px 60px #d9d9d9,
+        -20px -20px 60px #ffffff;
+}
+
+.photo h2 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.photo p {
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+
+.photo>img {
+    width: 100%;
+}
+
+.popular-collection,
+img,
+h2,
+h4,
+i,
+p {
+    margin-bottom: 10px;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+    opacity: 0.25;
+}
