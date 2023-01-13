@@ -49,7 +49,7 @@ nav {
     justify-content: center;
     align-items: center;
     /* margin: 50px 0; */
-    height: 80vh;
+    height: 100vh;
 }
 
 .banner-details {
@@ -106,14 +106,6 @@ nav {
 
 /* popular collection styles */
 
-.collection-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 5px 10px;
-    margin: 30px 190px;
-    gap: 20px;
-
-}
 
 .title {
     text-align: center;
@@ -121,6 +113,15 @@ nav {
     font-size: 28px;
     counter-reset: #3a3a3a;
     margin-top: 100px;
+}
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px 10px;
+    margin: 30px 190px;
+    gap: 20px;
+
 }
 
 .photo {
@@ -206,6 +207,10 @@ p {
     background-color: #E02C6D;
 }
 
+.featured-img img {
+    border-radius: 10px;
+}
+
 /* footer */
 .footer-container {
     background-color: #0A0826;
@@ -223,4 +228,69 @@ p {
     align-items: center;
     gap: 24px;
     margin-top: 30px;
+}
+
+/* media quaries */
+
+@media only screen and (max-width:576px) {
+    .hidden {
+        display: none;
+    }
+
+    .banner-details,
+    .collection-container,
+    .featured-container {
+        padding: 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .menu-bar ul {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-logo img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .banner-details,
+    .featured-container {
+        text-align: center;
+    }
+
+    .collection-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding: 20px;
+        padding: 5px 10px;
+        margin: 30px 0;
+    }
+
+    .featured-container {
+        flex-direction: column-reverse;
+        margin: 80px 0;
+
+    }
+
+    .featured-description {
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .banner-description {
+        margin-right: 0;
+    }
+
+    .featured-img img {
+        height: 250px;
+        width: 350px;
+        object-fit: cover;
+    }
 }
