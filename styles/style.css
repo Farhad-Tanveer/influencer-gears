@@ -23,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 50px;
     height: 80px;
 }
 
@@ -48,7 +48,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    /* margin: 50px 0; */
+    height: 80vh;
 }
 
 .banner-details {
@@ -73,7 +74,6 @@ nav {
 .btn button {
     font-weight: 700;
     font-size: 16px;
-    outline: none;
     border: none;
     padding: 5px 15px;
     border-radius: 25px;
@@ -87,16 +87,17 @@ nav {
     background-size: cover;
 }
 
-.banner-logo>img {
+/* .banner-logo>img {
     width: 400px;
     height: 400px;
-}
+} */
 
 /* brand logo */
 .brand-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
     margin: 20px 100px;
     padding: 20px;
@@ -165,4 +166,61 @@ p {
 .fa-star.empty {
     color: #AEAEAE;
     opacity: 0.25;
+}
+
+.see-more {
+    text-align: end;
+    margin-right: 200px;
+    color: #E02C6D;
+}
+
+/* featured container styles */
+.featured-container {
+    display: flex;
+    margin: 80px 150px;
+    gap: 90px;
+}
+
+.featured-details {
+    margin: auto;
+}
+
+.featured-title {
+    font-weight: 700;
+    font-size: 38px;
+    color: #0A0826;
+}
+
+.featured-description {
+    margin: 20px 0;
+    padding-right: 250px;
+}
+
+.featured-btn {
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    color: white;
+    background-color: #E02C6D;
+}
+
+/* footer */
+.footer-container {
+    background-color: #0A0826;
+}
+
+.footer-container>div {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
 }
