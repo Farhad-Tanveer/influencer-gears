@@ -232,6 +232,7 @@ p {
 
 /* media quaries */
 
+/* mobile devices */
 @media only screen and (max-width:576px) {
     .hidden {
         display: none;
@@ -293,4 +294,40 @@ p {
         width: 350px;
         object-fit: cover;
     }
+}
+
+/* tab and tablet devices */
+@media only screen and (min-width:577px) and (max-width:992px) {
+
+    header,
+    main {
+        padding: 10px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .collection-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        width: 100%;
+    }
+
+    .featured-container {
+        flex-direction: column-reverse;
+        margin: 80px 0;
+
+    }
+
+    .banner,
+    .collection-container,
+    .featured-container,
+    .banner-description,
+    .featured-description {
+        text-align: center;
+        margin: 10px;
+        padding: 0;
+    }
+
 }
